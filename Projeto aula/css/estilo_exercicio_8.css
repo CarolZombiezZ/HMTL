@@ -1,0 +1,17 @@
+/* CSS Document */
+
+div, nav, section {border-style:solid;
+  border-color: black;
+  border-width: 0,5rem;
+  margin:1%;}
+
+.cor1 {background-color: blueviolet;}
+.cor2 {background-color: rgb(67, 207, 207);}
+.cor3 {background-color: plum;}
+.cor4 {background-color: rgb(17, 190, 60);}
+
+.container {width: 80%;
+            min-width: 1000px;}
+
+section{display: flex;}
+section div{width: 45%; margin:2,5%}

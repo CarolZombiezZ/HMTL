@@ -1,0 +1,25 @@
+/* CSS Document */
+
+body {background-color: rgb(94, 23, 116);}
+
+table {width: 60%;
+       height: 100px;}
+
+.azul{background-color: aqua;
+     color:black;}
+
+.verde{background-color: greenyellow;
+        color: black;}
+
+.rosa{background-color: rgb(177, 71, 89);
+      color: black;}
+
+.verde_escuro{background-color: rgb(2, 131, 60);
+              color: black;}
+
+.tamanho_fonte{font-size:15px;}
+
+.tamanho_titulo{font-size:25px;}
+
+.black{background-color: black;
+       color:white;}

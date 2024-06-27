@@ -1,0 +1,162 @@
+/* CSS Document */
+ 
+body{ background-image: url("../imagens/layout_2a.jpg");
+    background-repeat: repeat-x;
+    margin: 0px 100px 0px 150px; 
+    background-color: white;
+    }
+
+    /* 1
+   body {
+    - colocar imagem layout_2a.jpg como background
+    - o background repetirá na horizontal
+    - Configurar a margem esquerda para 150px
+    - Configurar a margem superior em 0px                                                    
+    - Configurar a margem direita em 100px
+    - Configurar a margem inferior em 0px
+    - configurar a cor de fundo como branca*/
+
+#titulo_principal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: right;
+    color: #990000;
+    height: 270px;
+    width: 570px;
+    background-image: url("../imagens/layout_2b.jpg");
+    background-repeat:no-repeat ;
+    line-height: 30px; }
+
+/*2
+#titulo_principal {
+    - configurar a fonte da família verdana
+    - configurar o tamanho da fonte para 36px
+    - configurar a fonte como negrito
+    - alinhar o texto à direita
+    - configurar a cor do texto como #990000
+    - determinar a largura para 570px
+     - determinar a altura para 270px
+    - adicionar imagem de fundo – layout_2b.jpg
+    - o background não poderá repetir
+    - espaço entre o conteúdo e as margens é de 30px */
+
+
+
+#conteudo{  font-family: Georgia, 'Times New Roman', Times, serif ;
+            font-size: 15px;
+            font-weight: bold;
+            color: #003399;
+            text-align: right;
+            padding: 25px;
+            border-right:  3px dashed #990000;
+}            
+
+/*3
+#conteudo {
+    - configurar a fonte da família georgia
+    - configurar o tamanho da fonte para 15px
+    - configurar a fonte como negrito
+    - configurar a cor do texto como #003399
+    - alinhar o texto à direita
+    - espaço entre o conteúdo e as margens é de 25px
+    - adicionar borda direita com tamanho 3px
+    - configurar borda direita do tipo dashed
+    - configurar a borda direita na cor #990000 */
+
+
+
+
+#conteudo li {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+        list-style-type: none;
+        border-bottom: dashed #990000 3px;
+}
+
+/*4
+#conteudo li {
+ - configurar o tamanho da fonte para 24px
+    - configurar fonte como italico
+     - configurar fonte como negrito
+    - remover o marcador da lista;
+    - adicionar borda a baixo do tipo dashed
+    - configurar a borda a baixo na cor #990000
+- configurar a borda a baixo na espessura de 3px;*/
+
+
+#assinatura {height:175px;
+             font-size: 11px;
+             font-family: Arial, Helvetica, sans-serif;
+             width: 275px;
+             background-image: url(../imagens/layout_2c.jpg);
+             background-position: right top ;
+             background-repeat:no-repeat ;
+             border-right: solid #990000 thin;
+             border-bottom: solid #990000 thin;
+             padding: 10px;
+
+}
+
+/*5
+#assinatura {
+    - determinar a altura para 175px
+- configurar o tamanho da fonte para 11px
+    - configurar a fonte da família arial
+    -  determinar a largura para 275px
+    - colocar imagem layout_2c.jpg como background
+    - configurar a imagem de background à direita e à cima
+    - configurar a imagem de fundo para não repetir
+    - adicionar borda direita do tipo “solid” na cor “#990000” e com espessura “thin”
+    - adicionar borda a baixo do tipo “solid” na cor “#990000” e com espessura “thin”
+    -  espaço entre o conteúdo e as margens é de 10px*/
+
+
+#a {font-size:10px;
+    color: #990000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+
+/*a {
+        - configurar o tamanho da fonte para 10px
+        - configurar a cor da fonte para #990000
+        - configurar a fonte da família arial
+        - espaço entre o conteúdo e as margens é de 5px
+        - colocar todo texto em letra maiúscula
+        - configurar o espaço entre os caracteres para 2px
+        - configurar o espaçamento entre as linhas para 20px
+}*/
+
+
+
+a:visited{ color:#990000;
+          text-decoration: none;
+}
+
+/*
+a:visited {
+        - configurar a cor dos links visitados para #990000
+        - remover o sublinhado dos links visitados
+}*/
+
+
+a:hover{color:#990000;
+        text-decoration: none;
+        border-bottom: medium solid #990000;
+
+}
+
+/*
+a:hover {
+        - configurar a cor dos links quando ativado (passar o mouse) para #990000
+        - remover o sublinhado dos links
+        - adicionar borda a baixo com lagura média
+        - configurar borda a baixo do tipo solid
+        - configurar a borda a baixo do tipo na cor #99000
+}*/

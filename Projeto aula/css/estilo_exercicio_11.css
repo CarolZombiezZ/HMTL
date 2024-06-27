@@ -1,0 +1,86 @@
+/* CSS Document */
+
+body{ background-image: url("../imagens/poke.jpg");
+    margin: 0px 100px 0px 150px; 
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+nav{
+    width: 95%; 
+    background-color: #17e6e6; 
+    margin: 5px;
+    font-size: 25px; 
+    border:solid;
+    text-align: center;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    }
+
+nav ul li {display:inline-flex; 
+            padding-top: 1%;
+            padding-left: 10px;
+            opacity: 0.8;
+            }
+
+nav ul li:hover{opacity: 1;
+                }
+
+nav ul li a{color: white;
+                border-radius: 20px; border: solid; 
+                border-color: aliceblue;
+                border-width: 1px; 
+                padding:7px; 
+                text-decoration: none;
+                }
+
+section{display: flex;
+}               
+    
+#texto1{font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+         text-align: right;
+        color:black;
+        border:solid;
+    width: 40%;
+    padding: 3%;
+    line-height: 1.5em;
+    margin: 15px;}
+                
+#texto2{font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+        text-align: left;
+        color:black;
+        border:solid;
+    width: 40%;
+    padding:3%;
+    line-height: 1.5em;
+    margin: 15px;
+    }              
+
+
+.titulo{width: 100%;
+        text-align: center;
+        font-size:35px;
+        color:red;
+    
+    display: inline;}
+
+
+
+.cor1{color:rgb(141, 39, 141);}
+.cor2{color:rgb(12, 82, 3);}
+
+.imagens{
+    margin-top: 2%;
+    width: 33%;
+}
+
+.imagens img{width: 100%;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.imagens img:hover{opacity: 1;
+    transform: rotate(360deg);
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon_img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon_img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon_img/favicon-16x16.png">
+    <link rel="manifest" href="imagens/favicon_i/site.webmanifest">
+
+    <style>
+        .container{width:100%;}
+
+        .rotulo{width: 30%;
+                float: left;
+                clear:both;
+        }
+
+        .caixa{float: left;
+               margin-bottom: 3%;
+        }
+
+        .botao{clear: both;
+        }
+
+        .fundo{border: rgb(44, 223, 255) 2px solid;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 20%;
+        margin: auto;
+        padding: 2% 10%;
+        text-align: center;}
+
+        .fonte{font-family: 'Times New Roman', Times, serif ;
+              color: white;
+                font-size: 20px;}
+
+        .fundobtn{border: rgb(44, 223, 255) 2px solid;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 15%;
+        margin: auto;
+        padding: 2% 5%;
+        margin-top: 1%;
+        text-align: center;
+                  }
+        .btn{width: 100px;
+        height: 50px;}
+
+    </style>
+
+
+
+</head>
+<body background="imagens/bichinhos.jpg">
+    
+    <div class="container">
+        <section class="formulario">
+            <form action="arquivo.php" method="post">
+
+                <fieldset class="fonte fundo">
+                    <legend>Dados do dono do animal</legend>
+
+                    <label for="nome" class="rotulo">Nome:</label>
+                    <input type="text" 
+                           id="nome" 
+                           name="txtNome" 
+                           maxlength="60"
+                           autocomplete="off"
+                           required
+                           class="caixa">
+
+                    <label for="cpf" class="rotulo">CPF:</label>
+                    <input type="text" 
+                           id="cpf" 
+                           name="txtCPF" 
+                           maxlength="11"
+                           autocomplete="off"
+                           required
+                           class="caixa">
+
+                    <label for="endereco" class="rotulo">Endereço:</label>
+                    <input type="text" 
+                           id="endereco" 
+                           name="txtEndereco" 
+                           maxlength="120"
+                           autocomplete="off"
+                           required
+                           class="caixa">
+
+                    <label for="telefone" class="rotulo">Telefone:</label>
+                    <input type="text" 
+                           id="telefone" 
+                           name="txtTelefone" 
+                           maxlength="11"
+                           autocomplete="off"
+                           required
+                           class="caixa">
+
+                    <label for="e-mail" class="rotulo">E-mail:</label>
+                    <input type="email" 
+                           id="e-mail" 
+                           name="txtEmail" 
+                           maxlength="120"
+                           autocomplete="off"
+                           class="caixa">
+                   
+                </fieldset>
+
+
+                <fieldset class="fonte fundo">
+                    <legend>Dados do animal</legend>
+
+                    <label for="nome_animal" class="rotulo">Nome do animal:</label>
+                    <input type="text" 
+                           id="nome_animal" 
+                           name="txtNomeAnimal" 
+                           maxlength="60"
+                           autocomplete="off"
+                           required
+                           class="caixa">
+
+                    <label for="raca" class="rotulo">Raça:</label>
+                    <select  id="raca" name="txtRaca" class="caixa">
+                        
+                        <option value="Canário">        Canário       </option>
+                        <option value="Poodle">         Poodle        </option>
+                        <option value="Persa">          Persa         </option>
+                        <option value="Shelty">         Shelty        </option>
+                        <option value="Golden">         Golden        </option>
+                        <option value="Siamês">         Siamês        </option>
+                        <option value="Dog Alemão">     Dog Alemão    </option>
+                        <option value="Labrador">       Labrador      </option>
+                        <option value="Maltês">         Maltês        </option>
+                        <option value="Pastor Alemão">  Pastor Alemão </option>
+                        
+                        </select>
+                          
+                    <span class="rotulo">
+                    Tipo: 
+                    </span>
+                    <span class="caixa">
+                    <input type="radio" id="cao" value="Cachorro" name="txtTipo">
+                    <label for="cao">Cachorro</label>
+
+                    <input type="radio" id="cat" value="Gato" name="txtTipo">
+                    <label for="cat">Gato</label>
+
+                    <input type="radio" id="bird" value="Pássaro" name="txtTipo">
+                    <label for="bird">Pássaro</label>
+
+                    </span>
+
+
+                    <label for="peso" class="rotulo">Peso:</label>
+                    <input type="number"  
+                           id="peso" 
+                           name="txtPeso" 
+                           autocomplete="off"
+                           required
+                           class="caixa"
+                           max="150">
+                    
+                    <span class="rotulo">
+                    Sexo:
+                    </span>
+                    <span class="caixa">
+                    <input type="radio" id="F" value="Fêmea" name="txtSexo">
+                    <label for="F">Fêmea</label>
+
+                    <input type="radio" id="M" value="Macho" name="txtSexo">
+                    <label for="M">Macho</label>
+                    </span>
+
+                    <label for="data_nasc" class="rotulo">Data de Nascimento</label>
+                    <input type="date" name="dataNasc" id="data_nasc" class="caixa">
+
+                    <span class="rotulo"> 
+                    Pedigree:
+                    </span>
+                    <span class="caixa">
+                    <input type="radio" id="Ped_sim" value="Sim" name="txtPedigree">
+                    <label for="Ped_sim">Sim</label>
+
+                    <input type="radio" id="Ped_nao" value="Não" name="txtPedigree">
+                    <label for="Ped_nao">Não</label>
+                    </span>
+
+                </fieldset>
+                
+                <br>
+                <div class="fonte fundo">
+                <label for="obs">Observação</label> <br>
+                <textarea name="txtObs" 
+                          id="obs" 
+                          cols="40" 
+                          rows="10">
+                </textarea>
+                </div>
+
+
+                <p class="botao fundobtn">
+                <input type="submit" class="btn">
+                <input type="reset" class="btn"> </p>
+
+
+
+            </form>
+
+        </section>
+    </div>
+    
+</body>
+</html>
